@@ -1,0 +1,63 @@
+<div class="navbar">
+  <nav class="navbar__nav">
+    <input type="checkbox" name="openNav" id="openNav" class="navbar__opener" hidden>
+
+    <a href="/" class="navbar__logo">
+      <h2>WebDev <span>Blog</span></h2>
+    </a>
+
+    <ul class="navbar__list">
+      {{#if isHome}}
+        <li class="navbar__item active">
+          <a href="/" class="navbar__link">Главная</a>
+        </li>
+      {{else}}
+        <li class="navbar__item">
+          <a href="/" class="navbar__link">Главная</a>
+        </li>
+      {{/if}}
+
+      {{#if isAbout}}
+        <li class="navbar__item active">
+          <a href="/about" class="navbar__link">О себе</a>
+        </li>
+      {{else}}
+        <li class="navbar__item">
+          <a href="/about" class="navbar__link">О себе</a>
+        </li>
+      {{/if}}
+
+      {{#if isContacts}}
+        <li class="navbar__item active">
+          <a href="/contacts" class="navbar__link">Контакты</a>
+        </li>
+      {{else}}
+        <li class="navbar__item">
+          <a href="/contacts" class="navbar__link">Контакты</a>
+        </li>
+      {{/if}}
+
+      <li class="navbar__item">
+        <button class="navbar__btn">
+          {{#if isAuth}}
+            <svg>
+              <use xlink:href="/icons.svg#logout"></use>
+            </svg>
+          {{else}}
+            <svg>
+              <use xlink:href="/icons.svg#login"></use>
+            </svg>
+          {{/if}}
+        </button>
+      </li>
+    </ul>
+
+    <label for="openNav" class="navbar__open">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </label>
+
+    <label for="openNav" class="navbar__bg"></label>
+  </nav>
+</div>

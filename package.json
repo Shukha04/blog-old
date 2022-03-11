@@ -1,0 +1,53 @@
+{
+	"name": "blog",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"test": "node",
+		"dev": "concurrently \"nodemon\" \"open-cli http://localhost:1111 --wait\""
+	},
+	"author": "",
+	"license": "ISC",
+	"description": "",
+	"dependencies": {
+		"@handlebars/allow-prototype-access": "^1.0.3",
+		"bcryptjs": "^2.4.3",
+		"chalk": "^4.1.0",
+		"compression": "^1.7.4",
+		"connect-flash": "^0.1.1",
+		"connect-mongodb-session": "^2.4.1",
+		"csurf": "^1.11.0",
+		"express": "^4.17.1",
+		"express-handlebars": "^5.1.0",
+		"express-session": "^1.17.1",
+		"express-validator": "^6.6.1",
+		"handlebars": "^4.7.6",
+		"helmet": "^4.1.0",
+		"marked": "^1.1.1",
+		"moment": "^2.27.0",
+		"mongoose": "^5.10.0",
+		"multer": "^1.4.2",
+		"slugify": "^1.4.5"
+	},
+	"devDependencies": {
+		"concurrently": "^5.3.0",
+		"del": "^5.1.0",
+		"gulp": "^4.0.2",
+		"gulp-autoprefixer": "^7.0.1",
+		"gulp-cheerio": "^1.0.0",
+		"gulp-clean-css": "^4.3.0",
+		"gulp-file-include": "^2.2.2",
+		"gulp-fonter": "^0.3.0",
+		"gulp-group-css-media-queries": "^1.2.2",
+		"gulp-imagemin": "^7.1.0",
+		"gulp-rename": "^2.0.0",
+		"gulp-replace": "^1.0.0",
+		"gulp-sass": "^4.1.0",
+		"gulp-svg-sprite": "^1.5.0",
+		"gulp-svgmin": "^3.0.0",
+		"gulp-ttf2woff": "^1.1.1",
+		"gulp-ttf2woff2": "^3.0.0",
+		"gulp-uglify-es": "^2.0.0",
+		"nodemon": "^2.0.4"
+	}
+}
